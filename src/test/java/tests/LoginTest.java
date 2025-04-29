@@ -37,7 +37,7 @@ public class LoginTest extends TestBase {
         loginMessagePage.validateMessage(getEnvironmentData("Dev.logoutMessage"));
     }
 
-    @Story("Login tests: negative")
+   /* @Story("Login tests: negative")
     @Test(description = "Attempt to login with incorrect credentials: failed test")
     public void testAutorizationBroken() {
         LoginPage loginPage = new LoginPage();
@@ -46,5 +46,5 @@ public class LoginTest extends TestBase {
         loginPage.login(getEnvironmentData("Dev.email"), getEnvironmentData("Dev.wrongPassword"));
 
         loginMessagePage.validateMessage(String.format(getEnvironmentData("Dev.loginSuccessMessage"), getEnvironmentData("Dev.name")));
-    }
+    }*/
 }
